@@ -20,7 +20,6 @@ public class BasicMovieManager {
 	private SessionFactory sessionFactory;
 	
 	private void initSessionFactory() {
-		// This should probably live with the resources..
 		ClassLoader loader = BasicMovieManager.class.getClassLoader();
 		File configFile = new File(loader.getResource("com/dmoffat/chapter1/hibernate.cfg.xml").getFile());
 		
